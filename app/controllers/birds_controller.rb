@@ -33,6 +33,8 @@ class BirdsController < ApplicationController
     end
   end
 
+  #controller action handling the frontend.
+  #advisable to create in another controller//Birds_likes
   # PATCH /birds/:id/like
   def increment_likes
     bird = Bird.find_by(id: params[:id])
